@@ -14,7 +14,8 @@ class Project
 
   def add_backer(backer)
     @backers << backer
-    backer.backed_projects << self
+    backer.backed_projects << self #backed_projects is an attribute and an array
+    #so pushing is ok
   end
 
 end
